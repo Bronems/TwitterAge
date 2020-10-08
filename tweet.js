@@ -26,7 +26,7 @@ function heure(){
 	jours = jour();
         heures = heure();
         ans = Math.trunc(jours/365.5);
-        T.post('account/update_profile', { description : "J'ai " + ans + " ans soit : " + jours + " jours et " + heures + " heures "}, desc);
+        T.post('account/update_profile', { description : "J'ai " + ans + " ans soit : " + jours + " jours et " + heures + " heures ", url : "https://github.com/Bronems/"}, desc);
     function desc(err, data){
         if(err){
             console.log(err);
